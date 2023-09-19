@@ -1,5 +1,5 @@
 # You'll need a .py key for the bot.
-import config
+import key
 import discord
 import logging
 import requests
@@ -30,5 +30,5 @@ async def on_message(message):
     if message.content.startswith('$blow'):
         await message.channel.send('Im bout to BLOWWW!')
 
-bot.run(config.token)
+bot.run(key.token)
 
